@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAnding Page Toko Sepeda </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .font-bigger{
+            font-size: 1.1em;
+
+        }
+
+        .navbar-nav .nav-link{
+            color: rgba(0,0,0,1);
+            font-weight: 600;
+        }
+
+        
+        .navbar-nav .nav-link:hover{
+            padding-top: 2px;
+            border-bottom:3px solid rgb(117, 13, 13);
+        }
+
+        .link-custom:hover{
+            border-bottom: none;
+            padding-top: initial;
+            padding: 20px;
+            /* background-color: ; */
+        }
+
+        .bg-img{
+            width:100vw;
+            height:100vh;
+            background:url('sepeda 2.png')no-repeat;
+            background-size: 110%;
+        }
+        
+        .bg-img-2{
+            width:100vw;
+            height:100vh;
+            background:url('sepeda 1.png')no-repeat;
+            background-size: 110%;
+        }
+        .carousel-caption{
+            position: absolute;
+            bottom: 200px;
+        }
+
+        /* .margin-top-3{
+        } */
+        footer{
+            margin-top: 100px;
+            text-align:center;
+            background: rgba(0, 0, 0, 0.875);
+            padding:20px;
+
+            color: white;
+        }
+
+        .card {
+            position: relative;
+        }
+
+        .card-hover{
+            position: absolute;
+            top : 0 ;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background:rgba(0, 0, 0, 0.7);
+            transition: all 0.23s;
+            opacity:0;
+        }
+
+        .card:hover .card-hover{
+            opacity: 1;
+        }
+        
+        .card:hover .left{
+            opacity: 1;
+            left: 0;
+        }
+        
+        .card:hover .right{
+            opacity: 1;
+            right: 0;
+        }
+
+        .left{
+            position: absolute;
+            top :40%;
+            left: -10px;
+            padding:10px 30px;
+            background-color: rgb(196, 111, 0);
+            opacity:0;
+            transition: all 0.23s;
+        }
+
+
+        .right{
+            opacity: 0;
+            position: absolute;
+            top :60%;
+            right:-10px;
+            padding:10px 50px;
+            background-color: rgb(196, 0, 0);
+            transition: all 0.23s;
+        }
+
+
+        @media (max-width : 425px) {
+            .col-lg-3{
+                margin-top : 100px;
+            }
+
+            .bg-img{
+                height : 50vh; 
+            }
+
+            .carousel-caption h1{
+                font-size: 13px;
+                margin-bottom: -10px;
+            }
+            
+            .carousel-caption p{
+                font-size: 7px;
+            }
+
+            .btn-custom{
+                margin-top: -30px;
+                padding: 4px 7px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg" >
+        <div class="container">
+            <div>
+                <img src="logo-mutiara-sepeda-L-200.png" alt="logo">
+            </div>
+                <button class="navbar-toggler" data-target="#navbarNav" data-collapse="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                    
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto font-bigger ">
+                        <li class="nav-item mr-3">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="#section-1" class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="#section-2" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a href="#" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto font-bigger ">
+                        <li class="nav-item mr-3">
+                            <a href="#" class="nav-link link-custom"><img src="iconsearch.png" alt="search" class="img-fluid" width="40"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- carousel -->
+    <div class="carousel slide" id="slider" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active bg-img">
+                <div class="carousel-caption text-left">
+                    <h1 class="py-3">Wilier Zero SLR <br> Nothing Will be The Same</h1>
+                    <p class="pb-3">Lorem ipsum dolor sit, amet consectetur adipisicing <br> elit. Sit, voluptatem at harum corporis sapiente deserunt. </p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 btn-custom"><b>SHOP NOW</b></a>  
+                </div>
+            </div>
+            
+            <div class="carousel-item bg-img-2">
+                <div class="carousel-caption text-right">
+                    <h1>Wilier Zero SLR <br> Nothing Will be The Same</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti </p>
+                    <a href="#" class="btn btn-outline-light btn-custom  rounded-pill  px-4"><b>SHOP NOW</b></a>   
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <content>
+        <section id="section-1" class="">
+            <div class="container mt-5">
+                <h1>Best Price</h1>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card text-center shadow-lg">
+                            <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                            <div class="card-body">
+                                <h5>
+                                    Helm 1200
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                </p>
+
+                                <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                            </div>
+
+                            <div class="card-hover">
+                                <div class="left">
+                                    Add To wishlist
+                                </div>
+                                <div class="right">
+                                    Buy Now
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card text-center shadow-lg">
+                            <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                            <div class="card-body">
+                                <h5>
+                                    Helm 1200
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                </p>
+
+                                <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-8 col-sm-8 col-xs-8">
+                        <div class="card text-center shadow-lg">
+                            <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                            <div class="card-body">
+                                <h5>
+                                    Helm 1500
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur 
+                                </p>
+
+                                <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <div class="container mt-5 mb-5">
+                <h1>All Items</h1>
+                <div class="row mt-5">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5>
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card text-center shadow-lg">
+                        <img src="img-product-1.png" alt="img product" class="ml-5 pt-4  w-50" >
+
+                        <div class="card-body">
+                            <h5 >
+                                Helm 1200
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                            </p>
+
+                            <a class="btn btn-danger border-0"><b class="text-white px-4">120.000 IDR</b>    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="section-3" >
+            <div class="container" class="margin-custom-3">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <img src="img-artikel.png" alt="card img top" class="card-img-top"> <div class="card-body">
+                                <h5>Artikel Nya Keren...</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat architecto illo quam officia, qui totam et sequi, neque molestiae voluptate <a href="#">here ...</a></p>
+                            </div>       
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <img src="img-artikel.png" alt="artikel" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Artikel Nya Keren...</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat architecto illo quam officia, qui totam et sequi, neque molestiae voluptate <a href="#">here ...</a></p>
+                            </div>       
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </content>
+    <footer>
+        &copy copyright 2019    
+    </footer>
+
+<script src="js/jquey.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    // var inner = `<div class="card-hover">
+    //                             <div class="left">
+    //                                 Add To wishlist
+    //                             </div>
+    //                             <div class="right">
+    //                                 Buy Now
+    //                             </div>
+    //                         </div>`
+        
+    // $('.card').append(inner);
+
+    // $('.card').append(inner);
+    // $('.card').mouseover(function(e) 
+    // {   
+        
+    //     // if ($(this).children('.card-hover').length == 0 ){
+
+    //     // }
+
+    //     // else{
+    //     // // $('.card-hover').remove();
+
+    //     // }
+    //     // muncul hover 
+    //     // $('.card-hover').remove();
+    //     $('.card-hover').addClass('card-hover-hover');
+    //     $('.left').addClass('left-hover');
+    //     $('.right').addClass('right-hover');
+    
+    // });
+  
+    // $('.card').mouseout(function() 
+    // {
+    //     // muncul hover 
+    //     $('.card-hover').remove();
+    //     $('.card-hover').removeClass('card-hover-hover');
+    //     $('.left').removeClass('left-hover');
+    //     $('.right').removeClass('right-hover');
+    // });
+
+</script>
+</body>
+</html>
